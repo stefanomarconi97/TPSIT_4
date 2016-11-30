@@ -1,0 +1,25 @@
+/******************************************************************************************************************************************
+Alunno: Marconi Stefano
+Classe 4°INA
+Data: 30/11/2016
+******************************************************************************************************************************************/
+#include<stdio.h>
+#include<unistd.h>
+#include<sys/types.h>
+int main(){
+    pid_t pid;  /*Variabile contenente il valore di ritorno della funzione fork*/
+    int x;      /*Variabile del numero di elementi*/
+    int i;      /*Indice i*/
+    do{
+        printf("Inserire numero di fork da eseguire(1-5)\n");
+        scanf("%d",&x);
+    }while((x<1)||(x>5));
+    printf("il pid del primo processo e' %d\n",getpid());
+    for(i=0;i<x;i++){
+        pid=fork();     /*Genera un processo figlio*/
+        if(pid==0){     /*Entra soltanto se si trova nel processo figlio*/
+             sleep(1);
+             printf("il figlio ha pid %d, il processo padre ha pid %d\n",getpid(),getppid());
+        }
+    }
+}
