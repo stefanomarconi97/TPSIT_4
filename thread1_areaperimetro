@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<pthread.h>
+#include<stdlib.h>
+int b,h;
+
+void *area(void *arg){
+    int A;
+    A=b*h;
+    printf("Area: %d\n",A);
+}
+
+void *perimetro(void *arg){
+    int P;
+    P=(b+h)*2;
+    printf("Perimetro: %d\n",P);
+}
+
+int main(){
+    pthread_t tid1;
+    pthread_t tid2;
+    printf("Inserire valore della base\n");
+    scanf("%d",&b);
+    printf("Inserire valore dell'altezza\n");
+    scanf("%d",&h);
+    pthread_create(&tid1, NULL, &area, NULL);
+    pthread_create(&tid2, NULL, &perimetro, NULL);
+    sleep(5);
+    return 0;
+}
