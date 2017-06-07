@@ -39,11 +39,6 @@ public class Giudice extends Thread{
         setClassifica();
         this.pista.s1.setEnabled(true);
         pista.ButtonReset.setEnabled(true);
-        pista.rename.setEnabled(true);
-        pista.jTextField1.setEnabled(true);
-        pista.jTextField2.setEnabled(true);
-        pista.jTextField3.setEnabled(true);
-        pista.jTextField4.setEnabled(true);
     }
     
     synchronized public void hoFinito(String nomeAtleta){

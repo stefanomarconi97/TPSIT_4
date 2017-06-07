@@ -93,26 +93,27 @@ public class Pista extends javax.swing.JFrame {
         corsia1.add(partenza);
         partenza.setBounds(60, 0, 10, 330);
         partenza.getAccessibleContext().setAccessibleName("");
-        partenza.getAccessibleContext().setAccessibleParent(null);
 
         icoAtleta1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/corsa/Wario.png"))); // NOI18N
         corsia1.add(icoAtleta1);
-        icoAtleta1.setBounds(10, 14, 50, 50);
+        icoAtleta1.setBounds(5, 14, 50, 50);
 
+        name1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         name1.setText("Mario");
         corsia1.add(name1);
-        name1.setBounds(18, 0, 40, 14);
+        name1.setBounds(-5, 0, 70, 14);
 
         corsia2.setBackground(new java.awt.Color(255, 102, 0));
         corsia2.setLayout(null);
 
         icoAtleta2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/corsa/Green.png"))); // NOI18N
         corsia2.add(icoAtleta2);
-        icoAtleta2.setBounds(10, 14, 50, 50);
+        icoAtleta2.setBounds(5, 14, 50, 50);
 
+        name2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         name2.setText("Luigi");
         corsia2.add(name2);
-        name2.setBounds(20, 0, 30, 14);
+        name2.setBounds(-5, 0, 70, 14);
 
         javax.swing.GroupLayout partenza1Layout = new javax.swing.GroupLayout(partenza1);
         partenza1.setLayout(partenza1Layout);
@@ -144,11 +145,12 @@ public class Pista extends javax.swing.JFrame {
 
         icoAtleta3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/corsa/Blue.png"))); // NOI18N
         corsia3.add(icoAtleta3);
-        icoAtleta3.setBounds(10, 14, 50, 50);
+        icoAtleta3.setBounds(5, 14, 50, 50);
 
+        name3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         name3.setText("Wario");
         corsia3.add(name3);
-        name3.setBounds(18, 0, 50, 14);
+        name3.setBounds(-5, 0, 70, 14);
 
         javax.swing.GroupLayout partenza2Layout = new javax.swing.GroupLayout(partenza2);
         partenza2.setLayout(partenza2Layout);
@@ -169,11 +171,12 @@ public class Pista extends javax.swing.JFrame {
 
         icoAtleta4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/corsa/Black.png"))); // NOI18N
         corsia4.add(icoAtleta4);
-        icoAtleta4.setBounds(10, 14, 50, 50);
+        icoAtleta4.setBounds(5, 14, 50, 50);
 
+        name4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         name4.setText("Waluigi");
         corsia4.add(name4);
-        name4.setBounds(15, 0, 50, 14);
+        name4.setBounds(-5, 0, 70, 14);
 
         javax.swing.GroupLayout partenza3Layout = new javax.swing.GroupLayout(partenza3);
         partenza3.setLayout(partenza3Layout);
@@ -230,7 +233,7 @@ public class Pista extends javax.swing.JFrame {
             .addComponent(s1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel2.setBackground(new java.awt.Color(220, 220, 220));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -242,7 +245,7 @@ public class Pista extends javax.swing.JFrame {
         primo.setText("1. ...");
 
         secondo.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        secondo.setForeground(new java.awt.Color(152, 152, 152));
+        secondo.setForeground(new java.awt.Color(142, 142, 142));
         secondo.setText(" 2. ...");
 
         terzo.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -432,14 +435,14 @@ public class Pista extends javax.swing.JFrame {
     }//GEN-LAST:event_bottoneAvvioActionPerformed
 
     private void ButtonResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonResetActionPerformed
-        icoAtleta1.setBounds(10, 14, 50, 50);
-        icoAtleta2.setBounds(10, 14, 50, 50);
-        icoAtleta3.setBounds(10, 14, 50, 50);
-        icoAtleta4.setBounds(10, 14, 50, 50);
-        name1.setBounds(18, 0, 40, 14);
-        name2.setBounds(20, 0, 30, 14);
-        name3.setBounds(18, 0, 50, 14);
-        name4.setBounds(15, 0, 50, 14);
+        icoAtleta1.setBounds(5, 14, 50, 50);
+        icoAtleta2.setBounds(5, 14, 50, 50);
+        icoAtleta3.setBounds(5, 14, 50, 50);
+        icoAtleta4.setBounds(5, 14, 50, 50);
+        name1.setBounds(-5, 0, 70, 14);
+        name2.setBounds(-5, 0, 70, 14);
+        name3.setBounds(-5, 0, 70, 14);
+        name4.setBounds(-5, 0, 70, 14);
         primo.setText("1. ...");
         secondo.setText(" 2. ...");
         terzo.setText("  3. ...");
@@ -448,6 +451,11 @@ public class Pista extends javax.swing.JFrame {
         s1.setEnabled(true);
         s2.setEnabled(false);
         this.box.setEnabled(true);
+        rename.setEnabled(true);
+        jTextField1.setEnabled(true);
+        jTextField2.setEnabled(true);
+        jTextField3.setEnabled(true);
+        jTextField4.setEnabled(true);
         this.jTextField1.setText("");
         this.jTextField2.setText("");
         this.jTextField3.setText("");
